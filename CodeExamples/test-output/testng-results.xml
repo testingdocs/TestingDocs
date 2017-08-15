@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="45875" started-at="2017-08-15T17:08:15Z" finished-at="2017-08-15T17:09:01Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="45875" started-at="2017-08-15T17:08:15Z" finished-at="2017-08-15T17:09:01Z">
+      <class name="com.testingdocs.examples.selenium.SearchBing">
+        <test-method status="PASS" signature="Search_Bing()[pri:0, instance:com.testingdocs.examples.selenium.SearchBing@5e5792a0]" name="Search_Bing" duration-ms="45766" started-at="2017-08-15T22:38:15Z" finished-at="2017-08-15T22:39:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Search_Bing -->
+      </class> <!-- com.testingdocs.examples.selenium.SearchBing -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
