@@ -15,5 +15,36 @@
   <artifactId>httpclient</artifactId>
   <version>4.5.3</version>
 </dependency>
+
+<dependency>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-java</artifactId>
+        <version>3.4.0</version>
+</dependency> 
+
+<dependency>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-firefox-driver</artifactId>
+        <version>3.4.0</version>
+    </dependency> 
+
+<dependency>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-ie-driver</artifactId>
+        <version>3.4.0</version>
+    </dependency> 
+
+<dependency>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-chrome-driver</artifactId>
+        <version>3.4.0</version>
+    </dependency> 
+
+<dependency>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-remote-driver</artifactId>
+        <version>3.4.0</version>
+    </dependency> 
+
   </dependencies>
 </project>
