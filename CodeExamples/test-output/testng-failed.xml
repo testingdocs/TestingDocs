@@ -3,11 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.testingdocs.examples.selenium.SearchBing">
+      <class name="com.testingdocs.examples.selenium.SearchWeb">
         <methods>
           <include name="Search_Bing"/>
+          <include name="closeBrowser"/>
         </methods>
-      </class> <!-- com.testingdocs.examples.selenium.SearchBing -->
+      </class> <!-- com.testingdocs.examples.selenium.SearchWeb -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

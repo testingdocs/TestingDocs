@@ -15,7 +15,8 @@ public class SearchWeb {
 	public EventFiringWebDriver driver = null;  
 
 	@Test 
-	public void Search_Bing() throws Throwable {   
+	public void Search_Bing() throws Throwable { 
+		System.setProperty("webdriver.gecko.driver", "drivers/geckodriver.exe");
 		webDriver = new FirefoxDriver();    
 		driver = new EventFiringWebDriver(webDriver);   
 		WebElementHighlighter highlighter = new WebElementHighlighter();

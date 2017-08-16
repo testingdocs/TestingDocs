@@ -2,16 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="45875" started-at="2017-08-15T17:08:15Z" finished-at="2017-08-15T17:09:01Z">
+  <suite name="Default suite" duration-ms="49897" started-at="2017-08-16T11:30:09Z" finished-at="2017-08-16T11:30:59Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="45875" started-at="2017-08-15T17:08:15Z" finished-at="2017-08-15T17:09:01Z">
-      <class name="com.testingdocs.examples.selenium.SearchBing">
-        <test-method status="PASS" signature="Search_Bing()[pri:0, instance:com.testingdocs.examples.selenium.SearchBing@5e5792a0]" name="Search_Bing" duration-ms="45766" started-at="2017-08-15T22:38:15Z" finished-at="2017-08-15T22:39:01Z">
+    <test name="Default test" duration-ms="49897" started-at="2017-08-16T11:30:09Z" finished-at="2017-08-16T11:30:59Z">
+      <class name="com.testingdocs.examples.selenium.SearchWeb">
+        <test-method status="PASS" signature="Search_Bing()[pri:0, instance:com.testingdocs.examples.selenium.SearchWeb@77caeb3e]" name="Search_Bing" duration-ms="44920" started-at="2017-08-16T17:00:09Z" finished-at="2017-08-16T17:00:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Search_Bing -->
-      </class> <!-- com.testingdocs.examples.selenium.SearchBing -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.testingdocs.examples.selenium.SearchWeb@77caeb3e]" name="closeBrowser" is-config="true" duration-ms="4848" started-at="2017-08-16T17:00:54Z" finished-at="2017-08-16T17:00:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.testingdocs.examples.selenium.SearchWeb -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
