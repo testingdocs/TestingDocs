@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../jacoco-resources/report.gif" type="image/gif"/><title>RobotExample.java</title><link rel="stylesheet" href="../../../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../../../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">SearchWeb (Aug 18, 2017 5:46:56 PM)</a> &gt; <a href="../../index.html" class="el_group">CodeExamples</a> &gt; <a href="../index.html" class="el_bundle">src/main/java</a> &gt; <a href="index.source.html" class="el_package">com.testingdocs.examples</a> &gt; <span class="el_source">RobotExample.java</span></div><h1>RobotExample.java</h1><pre class="source lang-java linenums">package com.testingdocs.examples;
+
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
+import java.io.IOException;
+
+<span class="nc" id="L8">public class RobotExample {</span>
+	
+	static Robot robot;
+    
+    public static void main(String[] args) throws IOException {
+        
+        try {
+<span class="nc" id="L15">        	robot = new Robot();</span>
+<span class="nc" id="L16">            Process process = Runtime.getRuntime().exec(&quot;notepad.exe&quot;);</span>
+<span class="nc" id="L17">            robot.delay(10000);</span>
+<span class="nc" id="L18">            robot.keyPress(KeyEvent.VK_H);</span>
+<span class="nc" id="L19">            robot.keyPress(KeyEvent.VK_E);</span>
+<span class="nc" id="L20">            robot.keyPress(KeyEvent.VK_L);</span>
+<span class="nc" id="L21">            robot.keyPress(KeyEvent.VK_L);</span>
+<span class="nc" id="L22">            robot.keyPress(KeyEvent.VK_O);</span>
+<span class="nc" id="L23">            robot.keyPress(KeyEvent.VK_SPACE);</span>
+<span class="nc" id="L24">            robot.keyPress(KeyEvent.VK_W);</span>
+<span class="nc" id="L25">            robot.keyPress(KeyEvent.VK_O);</span>
+<span class="nc" id="L26">            robot.keyPress(KeyEvent.VK_R);</span>
+<span class="nc" id="L27">            robot.keyPress(KeyEvent.VK_L);</span>
+<span class="nc" id="L28">            robot.keyPress(KeyEvent.VK_D);</span>
+<span class="nc" id="L29">            typeCombinationKeys(KeyEvent.VK_SHIFT, KeyEvent.VK_1);</span>
+            
+<span class="nc" id="L31">        } catch (AWTException e) {</span>
+<span class="nc" id="L32">            e.printStackTrace();</span>
+        }
+<span class="nc" id="L34">    }</span>
+    
+    private static void typeCombinationKeys(int key1, int key2)
+    {
+        try
+        {
+<span class="nc" id="L40">            robot.keyPress(key1);</span>
+<span class="nc" id="L41">            robot.keyPress(key2);</span>
+<span class="nc" id="L42">            robot.keyRelease(key2);</span>
+<span class="nc" id="L43">            robot.keyRelease(key1);</span>
+<span class="nc" id="L44">        }</span>
+<span class="nc" id="L45">        catch(Exception e)</span>
+        {
+<span class="nc" id="L47">            System.out.println(&quot;Exception : Invalid keys&quot;);</span>
+        }
+<span class="nc" id="L49">}</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.9.201702052155</span>SearchWeb (Aug 18, 2017 5:46:56 PM)</div></body></html>

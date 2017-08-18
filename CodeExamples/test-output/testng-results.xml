@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="128436" started-at="2017-08-18T07:34:19Z" finished-at="2017-08-18T07:36:28Z">
+  <suite name="Default suite" duration-ms="72253" started-at="2017-08-18T12:15:40Z" finished-at="2017-08-18T12:16:52Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="128436" started-at="2017-08-18T07:34:19Z" finished-at="2017-08-18T07:36:28Z">
+    <test name="Default test" duration-ms="72253" started-at="2017-08-18T12:15:40Z" finished-at="2017-08-18T12:16:52Z">
       <class name="com.testingdocs.examples.selenium.SearchWeb">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.testingdocs.examples.selenium.SearchWeb@42b28ff1]" name="init" is-config="true" duration-ms="72624" started-at="2017-08-18T13:04:20Z" finished-at="2017-08-18T13:05:33Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.testingdocs.examples.selenium.SearchWeb@42b28ff1]" name="init" is-config="true" duration-ms="33199" started-at="2017-08-18T17:45:40Z" finished-at="2017-08-18T17:46:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="SearchBing()[pri:0, instance:com.testingdocs.examples.selenium.SearchWeb@42b28ff1]" name="SearchBing" duration-ms="32787" started-at="2017-08-18T13:05:33Z" finished-at="2017-08-18T13:06:06Z">
+        <test-method status="PASS" signature="SearchBing()[pri:0, instance:com.testingdocs.examples.selenium.SearchWeb@42b28ff1]" name="SearchBing" duration-ms="20368" started-at="2017-08-18T17:46:13Z" finished-at="2017-08-18T17:46:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SearchBing -->
-        <test-method status="PASS" signature="SearchGoogle()[pri:0, instance:com.testingdocs.examples.selenium.SearchWeb@42b28ff1]" name="SearchGoogle" duration-ms="13756" started-at="2017-08-18T13:06:06Z" finished-at="2017-08-18T13:06:20Z">
+        <test-method status="PASS" signature="SearchGoogle()[pri:0, instance:com.testingdocs.examples.selenium.SearchWeb@42b28ff1]" name="SearchGoogle" duration-ms="13129" started-at="2017-08-18T17:46:34Z" finished-at="2017-08-18T17:46:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SearchGoogle -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.testingdocs.examples.selenium.SearchWeb@42b28ff1]" name="closeBrowser" is-config="true" duration-ms="8174" started-at="2017-08-18T13:06:20Z" finished-at="2017-08-18T13:06:28Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.testingdocs.examples.selenium.SearchWeb@42b28ff1]" name="closeBrowser" is-config="true" duration-ms="4991" started-at="2017-08-18T17:46:47Z" finished-at="2017-08-18T17:46:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->

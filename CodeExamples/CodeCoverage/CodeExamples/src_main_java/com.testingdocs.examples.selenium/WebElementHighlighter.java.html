@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../jacoco-resources/report.gif" type="image/gif"/><title>WebElementHighlighter.java</title><link rel="stylesheet" href="../../../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../../../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">SearchWeb (Aug 18, 2017 5:46:56 PM)</a> &gt; <a href="../../index.html" class="el_group">CodeExamples</a> &gt; <a href="../index.html" class="el_bundle">src/main/java</a> &gt; <a href="index.source.html" class="el_package">com.testingdocs.examples.selenium</a> &gt; <span class="el_source">WebElementHighlighter.java</span></div><h1>WebElementHighlighter.java</h1><pre class="source lang-java linenums">package com.testingdocs.examples.selenium;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.events.AbstractWebDriverEventListener;
+import java.io.File;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import org.apache.commons.io.FileUtils;
+
+<span class="fc" id="L17">public class WebElementHighlighter extends AbstractWebDriverEventListener {</span>
+
+
+	public void beforeFindBy(By by, WebElement element, WebDriver driver){
+
+<span class="fc" id="L22">		WebElement webelement = driver.findElement(by);</span>
+
+<span class="pc bpc" id="L24" title="1 of 2 branches missed.">		if (driver instanceof JavascriptExecutor) {</span>
+<span class="fc" id="L25">			((JavascriptExecutor)driver).executeScript(&quot;arguments[0].style.border='5px solid blue'&quot;, webelement);</span>
+		}
+		
+<span class="fc" id="L28">		File scrFile = ((TakesScreenshot) driver)</span>
+<span class="fc" id="L29">                .getScreenshotAs(OutputType.FILE);</span>
+        try {
+<span class="fc" id="L31">            FileUtils.copyFile(scrFile, new File(&quot;images/HighlighterScreenCapture&quot;  + currentTime() + &quot;.jpg&quot;));</span>
+<span class="fc" id="L32">        } </span>
+<span class="nc" id="L33">        catch (IOException e) {</span>
+<span class="nc" id="L34">            e.printStackTrace();</span>
+        }
+<span class="fc" id="L36">	}</span>
+	
+	public String currentTime()
+	{
+<span class="fc" id="L40">		Date todayDate = new Date();</span>
+<span class="fc" id="L41">		SimpleDateFormat formatter = new SimpleDateFormat(&quot;ddMMyy_HHmmss&quot;);</span>
+<span class="fc" id="L42">		String formattDate = formatter.format(todayDate);</span>
+<span class="fc" id="L43">		return formattDate;</span>
+
+	}
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.9.201702052155</span>SearchWeb (Aug 18, 2017 5:46:56 PM)</div></body></html>

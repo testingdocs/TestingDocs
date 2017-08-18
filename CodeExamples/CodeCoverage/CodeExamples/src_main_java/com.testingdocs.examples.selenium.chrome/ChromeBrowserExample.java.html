@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../jacoco-resources/report.gif" type="image/gif"/><title>ChromeBrowserExample.java</title><link rel="stylesheet" href="../../../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../../../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">SearchWeb (Aug 18, 2017 5:46:56 PM)</a> &gt; <a href="../../index.html" class="el_group">CodeExamples</a> &gt; <a href="../index.html" class="el_bundle">src/main/java</a> &gt; <a href="index.source.html" class="el_package">com.testingdocs.examples.selenium.chrome</a> &gt; <span class="el_source">ChromeBrowserExample.java</span></div><h1>ChromeBrowserExample.java</h1><pre class="source lang-java linenums">package com.testingdocs.examples.selenium.chrome;
+
+import java.util.concurrent.TimeUnit;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+<span class="nc" id="L11">public class ChromeBrowserExample {</span>
+	 private WebDriver driver;
+
+	@Test
+	 public void sampleTest() {
+<span class="nc" id="L16">	 driver.get(&quot;https://www.google.com&quot;);</span>
+<span class="nc" id="L17">	 driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);</span>
+<span class="nc" id="L18">	 Assert.assertEquals(driver.getTitle(), &quot;Google&quot;, &quot;I'm verifying window title here in this test&quot;);</span>
+
+<span class="nc" id="L20">	}</span>
+
+	@BeforeClass
+	 public void beforeClass() {
+<span class="nc" id="L24">	 System.setProperty(&quot;webdriver.chrome.driver&quot;, &quot;drivers/chromedriver.exe&quot;);</span>
+<span class="nc" id="L25">	 driver = new ChromeDriver();</span>
+<span class="nc" id="L26">	 }</span>
+
+	@AfterClass
+	 public void afterClass() {
+<span class="nc bnc" id="L30" title="All 2 branches missed.">	 if(driver != null)</span>
+	 {
+<span class="nc" id="L32">	 driver.quit();</span>
+	 }
+<span class="nc" id="L34">	 }</span>
+
+	}
+
+
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.9.201702052155</span>SearchWeb (Aug 18, 2017 5:46:56 PM)</div></body></html>
