@@ -24,6 +24,7 @@ public class SearchWeb {
 		driver.register(highlighter); 
 	}
 
+	// Search Bing Website
 	@Test 
 	public void SearchBing() throws Throwable { 
 		  
@@ -36,6 +37,7 @@ public class SearchWeb {
 		Assert.assertTrue(true,"Sample Assert");  
 	} 
 	
+	// Search Google Website
 	@Test 
 	public void SearchGoogle() throws Throwable { 
 		  
