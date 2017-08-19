@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\vani\AppData\Local\Temp\testng-eclipse-538904947\testng-customsuite.xml</span>
+                    <span>C:\Users\yskum\AppData\Local\Temp\testng-eclipse-2090718145\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 2 failed,   </span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,12 +102,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.testingdocs.examples.testng.TakeScreenShotOnAssertFail" hash-for-method="sampleFailureTest">sampleFailureTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.testingdocs.examples.testng.TakeScreenShotOnAssertFail" hash-for-method="sampleTilteFailureTest">sampleTilteFailureTest</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.testingdocs.examples.testng.CustomSoftAssertExample" hash-for-method="sampleTilteFailureTests">sampleTilteFailureTests</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -125,70 +120,19 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.testingdocs.examples.testng.TakeScreenShotOnAssertFail</span>
+              <span class="class-name">com.testingdocs.examples.testng.CustomSoftAssertExample</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="sampleFailureTest">
-                  </a> <!-- sampleFailureTest -->
-                  <span class="method-name">sampleFailureTest</span>
-                  <div class="stack-trace">java.lang.AssertionError: Assert3 expected [Facebook – log in or sign up] but found [Bing]
-	at org.testng.Assert.fail(Assert.java:93)
-	at org.testng.Assert.failNotEquals(Assert.java:512)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
-	at org.testng.Assert.assertEquals(Assert.java:115)
-	at org.testng.Assert.assertEquals(Assert.java:189)
-	at org.testng.asserts.Assertion$10.doAssert(Assertion.java:193)
-	at org.testng.asserts.Assertion.executeAssert(Assertion.java:30)
-	at org.testng.asserts.Assertion.doAssert(Assertion.java:15)
-	at org.testng.asserts.Assertion.assertEquals(Assertion.java:190)
-	at com.testingdocs.examples.testng.TakeScreenShotOnAssertFail.sampleFailureTest(TakeScreenShotOnAssertFail.java:47)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="sampleTilteFailureTest">
-                  </a> <!-- sampleTilteFailureTest -->
-                  <span class="method-name">sampleTilteFailureTest</span>
-                  <div class="stack-trace">java.lang.AssertionError: Assert1 expected [Twitter. It&apos;s what&apos;s happening.] but found [Facebook]
-	at org.testng.Assert.fail(Assert.java:93)
-	at org.testng.Assert.failNotEquals(Assert.java:512)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
-	at org.testng.Assert.assertEquals(Assert.java:115)
-	at org.testng.Assert.assertEquals(Assert.java:189)
-	at org.testng.asserts.Assertion$10.doAssert(Assertion.java:193)
-	at org.testng.asserts.Assertion.executeAssert(Assertion.java:30)
-	at org.testng.asserts.Assertion.doAssert(Assertion.java:15)
-	at org.testng.asserts.Assertion.assertEquals(Assertion.java:190)
-	at com.testingdocs.examples.testng.TakeScreenShotOnAssertFail.sampleTilteFailureTest(TakeScreenShotOnAssertFail.java:30)
+                  <a name="sampleTilteFailureTests">
+                  </a> <!-- sampleTilteFailureTests -->
+                  <span class="method-name">sampleTilteFailureTests</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	Assert1,this will fail expected [Bing] but found [BogusTitle],
+	Assert2,this too will fail expected [DuckDuckGo] but found [BogusTitle]
+	at com.testingdocs.examples.testng.CustomSoftAssert.assertAll(CustomSoftAssert.java:52)
+	at com.testingdocs.examples.testng.CustomSoftAssertExample.sampleTilteFailureTests(CustomSoftAssertExample.java:38)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -223,7 +167,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\vani\AppData\Local\Temp\testng-eclipse-538904947\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\yskum\AppData\Local\Temp\testng-eclipse-2090718145\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -232,7 +176,7 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.testingdocs.examples.testng.TakeScreenShotOnAssertFail&quot;/&gt;
+      &lt;class name=&quot;com.testingdocs.examples.testng.CustomSoftAssertExample&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -272,20 +216,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'sampleTilteFailureTest')
-data.setCell(0, 2, 'com.testingdocs.examples.testng.TakeScreenShotOnAssertFail')
-data.setCell(0, 3, 7577);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'sampleFailureTest')
-data.setCell(1, 2, 'com.testingdocs.examples.testng.TakeScreenShotOnAssertFail')
-data.setCell(1, 3, 5200);
+data.setCell(0, 1, 'sampleTilteFailureTests')
+data.setCell(0, 2, 'com.testingdocs.examples.testng.CustomSoftAssertExample')
+data.setCell(0, 3, 1321);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 12 seconds</span>
+              <span class="suite-total-time">Total running time: 1 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -311,7 +251,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.testingdocs.examples.testng.TakeScreenShotOnAssertFail</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.testingdocs.examples.testng.CustomSoftAssertExample</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
@@ -319,18 +259,12 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">sampleFailureTest</span>
-                <span class="method-start">8585 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">sampleTilteFailureTest</span>
-                <span class="method-start">13814 ms</span>
+                <span class="method-name">sampleTilteFailureTests</span>
+                <span class="method-start">2252 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
-                <span class="method-name">close</span>
-                <span class="method-start">21402 ms</span>
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">3573 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
