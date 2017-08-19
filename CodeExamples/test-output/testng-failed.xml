@@ -3,13 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.testingdocs.examples.selenium.chrome.ChromeBrowserExample">
+      <class name="com.testingdocs.examples.testng.TakeScreenShotOnAssertFail">
         <methods>
-          <include name="afterClass"/>
-          <include name="sampleTest"/>
-          <include name="beforeClass"/>
+          <include name="setUp"/>
+          <include name="sampleTilteFailureTest"/>
+          <include name="close"/>
+          <include name="sampleFailureTest"/>
         </methods>
-      </class> <!-- com.testingdocs.examples.selenium.chrome.ChromeBrowserExample -->
+      </class> <!-- com.testingdocs.examples.testng.TakeScreenShotOnAssertFail -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
